@@ -1,0 +1,137 @@
+
+:root {
+  --primary-color: #f2bbca;
+  --secondary-color: #b9bdbd;
+  --tertiary-color: #45a29e;
+  --quaternary-color: #010303;
+  --quinary-color: #43423d;
+  --font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--primary-color);
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content-section {
+  padding: 40px 0;
+}
+
+
+nav {
+  text-align: center;
+  background-color: var(--quaternary-color);
+  padding: 20px;
+}
+
+nav a {
+  color: var(--primary-color);
+  text-decoration: none;
+  padding: 20px;
+}
+
+nav a:hover {
+  background-color: var(--quinary-color);
+  color: var(--primary-color);
+}
+
+
+img {
+  max-width: 200px;
+  height: 100px;
+
+  display: block;
+  
+  object-fit: cover;
+  transition: transform 0.3s;
+  margin: 0 auto; 
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+h2 {
+  color: var(--quinary-color);
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+  animation: slide-in 1s ease-in-out;
+}
+
+@keyframes slide-in {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+li {
+  margin: 10px;
+  color: var(--quaternary-color);
+  font-size: 24px;
+}
+
+li a {
+  color: var(--quaternary-color);
+  text-decoration: none;
+}
+
+li a:hover {
+  color: var(--tertiary-color);
+}
+
+p {
+  color: var(--quaternary-color);
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#home, #about, #skills, #achievements, #contact {
+  background-color: var(--secondary-color); 
+
+#home hr {
+  border-top: 2px solid var(--tertiary-color); 
+}
+
+#about hr {
+  border-top: 2px solid var(--quaternary-color); 
+}
+
+#skills hr {
+  border-top: 2px solid var(--quinary-color); 
+}
+
+#achievements hr {
+  border-top: 2px solid var(--primary-color); 
+}
+
+#contact hr {
+  border-top: 2px solid var(--quaternary-color); 
+}
+}

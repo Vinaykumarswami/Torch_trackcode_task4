@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Your Name - Portfolio</title>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="content-section">
+        
+            <h2>Home</h2>
+           <p> <img src="21CS1060.jpg" alt="Your Photo"></p>
+            <p>current address: East coast Road, Pillaichavady, Puducherry, 605 014</p>
+            <p>College: PUDUCHERRY TECHNOLOGICAL UNIVERSITY</p>
+    </section>
+    <br>
+            <section id="about" class="content-section">
+                <h2>About</h2>
+                <p>Name: Vinay Kumar Swami</p>
+                <p> Home Address: Chomu, Jaipur, Rajasthan, India,303712</p>
+                <p>College: PUDUCHERRY TECHNOLOGICAL UNIVERSITY</p>
+            </section>
+            
+      <br>
+    
+    <section id="skills" class="content-section">
+        
+            <h2>Skills</h2>
+            
+                <p>Languages:   C++, C, JavaScript, C#(Beginner)</p>
+                <p>Fundamentals:   OS, DBMS, OOPs</p>
+                <p>Web Development:   HTML, CSS, JavaScript</p>
+                <p>Tools:   VS Code, Git, Android Studio, Visual Studio</p>
+           
+    </section>
+    <br>
+    <section id="achievements" class="content-section">
+      
+            <h2>Achievements</h2>
+            
+                <p>LeetCode : <a href="https://leetcode.com/vinay_kumar_swami/" target="_blank"> Leetcode Profile </a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/vinay-kumar-swami-347b38237/" target="_blank">LinkedIn Profile</a></p>
+                <p>GeeksforGeeks: <a href="https://auth.geeksforgeeks.org/user/vinay_kumar_swami" target="_blank">GeeksforGeeks Profile</a></p>
+                <p>GitHub: <a href="https://github.com/Vinaykumarswami?tab=following" target="_blank">GitHub Profile</a></p>
+            
+       
+    </section>
+    <br>
+    <section id="contact" class="content-section">
+        <div class="section-wrapper">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:vinayswami2020@gmail.com"> vinayswami2020@gmail.com</a></p>
+            <p> Contact: <a href="tel:+91894999455">8949998455</a></p>
+        </div>
+    </section>
+    
+<br>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
